@@ -5,7 +5,8 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles(theme => ({
     mainPageInfoContent: {
-
+        backgroundColor: theme.palette.background.paper,
+        padding: theme.spacing(8, 0, 6),
     }
 }))
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import AppBar from '@material-ui/core/AppBar';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -14,6 +14,15 @@ const useStyles = makeStyles((theme) => ({
 
 const HeaderAppBar = () => {
     const classes = useStyles();
+    const [open, setOpen] = useState(true)
+
+    const handleDrawerOpen = () => {
+        setOpen(true)
+    }
+
+    const handleDrawerClose = () => {
+        setOpen(false)
+    }
 
     return (
         <React.Fragment>
